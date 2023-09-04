@@ -75,3 +75,16 @@
       padding: 0;
     }
 }
+
+@media (max-width: 600px) {
+.navlogo {width: 50px;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    top: 20px;
+  }
+}
+
+.measure-wide {
+  max-width: 60em;
+}
