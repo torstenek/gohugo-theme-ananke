@@ -66,7 +66,7 @@ This theme uses the "Tachyons" CSS library. This will allow you to manipulate th
 2. Add the theme's repo to your `config.toml`:
 
    ```toml
-   theme = ["github.com/theNewDynamic/gohugo-theme-ananke"]
+   theme = ["github.com/torstenek/gohugo-theme-ananke"]
    ```
 
 ### As Git Submodule
@@ -74,7 +74,7 @@ This theme uses the "Tachyons" CSS library. This will allow you to manipulate th
 Inside the folder of your Hugo site run:
 
 ```
-$ git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
+$ git submodule add https://github.com/torstenek/gohugo-theme-ananke.git themes/ananke
 ```
 For more information read the official [setup guide](//gohugo.io/overview/installing/) of Hugo.
 
@@ -87,7 +87,7 @@ After installing the theme successfully it requires a just a few more steps to g
 
 ### The config file
 
-Take a look inside the [`exampleSite`](https://github.com/theNewDynamic/gohugo-theme-ananke/tree/master/exampleSite) folder of this theme. You'll find a file called [`config.toml`](https://github.com/theNewDynamic/gohugo-theme-ananke/blob/master/exampleSite/config.toml). To use it, copy the [`config.toml`](https://github.com/theNewDynamic/gohugo-theme-ananke/blob/master/exampleSite/config.toml) in the root folder of your Hugo site. Feel free to change the strings in this theme.
+Take a look inside the [`exampleSite`](https://github.com/torstenek/gohugo-theme-ananke/tree/master/exampleSite) folder of this theme. You'll find a file called [`config.toml`](https://github.com/torstenek/gohugo-theme-ananke/blob/master/exampleSite/config.toml). To use it, copy the [`config.toml`](https://github.com/torstenek/gohugo-theme-ananke/blob/master/exampleSite/config.toml) in the root folder of your Hugo site. Feel free to change the strings in this theme.
 
 You may need to delete the line: `themesDir = "../.."`
 
@@ -158,16 +158,16 @@ The theme automatically adds "Follow" link icons to the header and footer and "S
 
 In order to register a service to be used, user must add an `ananke_socials` parameter to its project configuration file and list them through it in the desired order. Each entry must bear a 
 - name*: It matches the built-in service reference (Ex: twitter, github)
-- url*: The url of the handle's profile on the service (Ex: https://twitter.com/theNewDynamic, https://github.com/
-theNewDynamic)
+- url*: The url of the handle's profile on the service (Ex: https://twitter.com/torstenek, https://github.com/
+torstenek)
 - rel: (default: `noopener`) Controls the `rel` attribute of the "follow" link. Useful for Mastodon verification which requires a `rel="me"` on the link.
 ```yaml
 params:
   ananke_socials:
   - name: twitter
-    url: https://twitter.com/theNewDynamic
+    url: https://twitter.com/torstenek
   - name: github
-    url: https://github.com/theNewDynamic
+    url: https://github.com/torstenek
   - name: mastodon
     url: https://social.example.com/@username
     rel: me noopener
@@ -181,10 +181,10 @@ If user needs to overwrite default `color` and `label` of the service, they simp
 params:
   ananke_socials:
   - name: twitter
-    url: https://twitter.com/theNewDynamic
+    url: https://twitter.com/torstenek
     label: TND Twitter
   - name: github
-    url: https://github.com/theNewDynamic
+    url: https://github.com/torstenek
     label: TND GitHub Account
     color: '#ff6800'
 ```
@@ -200,7 +200,7 @@ params:
     label: Facebook
     follow: false
   - name: twitter
-    url: https://twitter.com/theNewDynamic
+    url: https://twitter.com/torstenek
     label: TND Twitter
 ```
 
@@ -267,7 +267,7 @@ Ananke uses [Tachyon.io](https://tachyons.io/) utility class library.
 
 #### Custom CSS
 
-WARNING: Pending resolution of this [discussion](https://github.com/theNewDynamic/gohugo-theme-ananke/discussions/452#discussioncomment-1865301), Custom CSS only works with Hugo Extended
+WARNING: Pending resolution of this [discussion](https://github.com/torstenek/gohugo-theme-ananke/discussions/452#discussioncomment-1865301), Custom CSS only works with Hugo Extended
 
 In order to complement the default CSS with your own, you can add custom css files to the project. 
 
@@ -360,11 +360,11 @@ hugo
 
 ## Contributing
 
-If you find a bug or have an idea for a feature, feel free to use the [issue tracker](https://github.com/theNewDynamic/gohugo-theme-ananke/issues) to let me know.
+If you find a bug or have an idea for a feature, feel free to use the [issue tracker](https://github.com/torstenek/gohugo-theme-ananke/issues) to let me know.
 
 
 
 
 TODO:
 
-- fix hard-coded link to [section](https://github.com/theNewDynamic/gohugo-theme-ananke/blob/master/layouts/index.html#L32)
+- fix hard-coded link to [section](https://github.com/torstenek/gohugo-theme-ananke/blob/master/layouts/index.html#L32)

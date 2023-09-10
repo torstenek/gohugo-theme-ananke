@@ -19,7 +19,7 @@
 
 {{ $registered_services := slice }}
 {{/* We first look for legacy settings that lives at the root of the site.Params as such (github: https://github.com/
-theNewDynamic) and them to the list with key as .name and value as .url */}}
+torstenek) and them to the list with key as .name and value as .url */}}
 {{ $user_using_legacy := false }}
 
 {{ $legacy_api_services := slice "facebook" "twitter" "instagram" "youtube" "github" "gitlab" "keybase" "linkedin" "medium" "mastodon" "slack" "stackoverflow" "rss" }}
